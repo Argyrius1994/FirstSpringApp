@@ -5,6 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="student_bean" class="com.fiction.Student"></bean>
+    <bean id="student_bean" class="com.fiction.Student" scope="singleton" init-method="initStudent" destroy-method="destroyStudent">
+
+
+        <!--Create default values in the bean-->
+        <property name="studentName" value="Argyrios Gatidis"/>
+    </bean>
 
 </beans>
