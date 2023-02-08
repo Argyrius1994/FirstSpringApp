@@ -16,7 +16,7 @@ public class Main {
         Student student = (Student) context.getBean("student_bean");
 //        Student student1 = (Student) context.getBean("student_bean");
 //        student.setStudentName("Argyrios Gatidis");
-        System.out.println("Hi my name is "+student.getStudentName());
+         student.showInfo();
 //        System.out.println("Hi my name is "+student1.getStudentName());
 //        System.out.println("Is the same instance : "+(student == student1));
 //        This is how to close the Context
